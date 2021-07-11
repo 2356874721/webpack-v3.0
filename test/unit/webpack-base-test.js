@@ -5,6 +5,6 @@ describe('webpack.base.js test case', () => {
   // console.log(baseConfig)
   it ('entry', () => {
     assert.equal(baseConfig.entry.index.indexOf('webpack-v3.0/test/smoke/template/src/index/index.js') > -1, true)
-    assert.equal(baseConfig.entry.search.indexOf('webpack-v3.0/test/smoke/template/src/search/search.js') > -1, true)
+    assert.equal(baseConfig.entry.search.indexOf('webpack-v3.0/test/smoke/template/src/search/index.js') > -1, true)
   })
 })
