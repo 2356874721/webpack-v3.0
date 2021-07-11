@@ -2,10 +2,10 @@
 
 import React from 'react'
 import ReactDom from 'react-dom'
-import './search.less'
+import './index.less'
 import Logo from './image/test.jpeg'
-import '../common/index.js'
-import { a } from '../common/tree-shaking.js'
+import '../../common/index.js'
+import { a } from '../../common/tree-shaking.js'
 import { getQueryValue } from 'beast-sheriff-library'
 
 class Search extends React.Component{
@@ -16,7 +16,7 @@ class Search extends React.Component{
     }
   }
   loadComponent () {
-    import('../common/comp.js').then((Content) => {
+    import('../../common/comp.js').then((Content) => {
       this.setState({
         Content: Content.default
       })
